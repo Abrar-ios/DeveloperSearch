@@ -35,14 +35,29 @@
                                                     <constraint firstAttribute="height" constant="21" id="FOV-m9-pSF"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCl-Tv-vVI">
+                                                <rect key="frame" x="25" y="22" width="21" height="22"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="21" id="DFM-dw-xqX"/>
+                                                    <constraint firstAttribute="height" constant="22" id="ckZ-dh-GEp"/>
+                                                </constraints>
+                                                <state key="normal" image="btn_undo">
+                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="undoButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="rFm-Qv-SEs"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.074509803921568626" green="0.074509803921568626" blue="0.074509803921568626" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                         <constraints>
+                                            <constraint firstItem="fCl-Tv-vVI" firstAttribute="leading" secondItem="M6B-EA-UlP" secondAttribute="leading" constant="25" id="Zeh-J9-9i1"/>
                                             <constraint firstItem="idg-wr-MKA" firstAttribute="centerX" secondItem="M6B-EA-UlP" secondAttribute="centerX" id="cj2-6i-fpP"/>
                                             <constraint firstItem="idg-wr-MKA" firstAttribute="centerY" secondItem="M6B-EA-UlP" secondAttribute="centerY" id="eQA-fg-Nxl"/>
+                                            <constraint firstItem="fCl-Tv-vVI" firstAttribute="centerY" secondItem="M6B-EA-UlP" secondAttribute="centerY" id="kJ0-Px-r3a"/>
                                             <constraint firstAttribute="height" constant="67" id="zYs-0z-3WP"/>
                                         </constraints>
                                     </view>
@@ -82,7 +97,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="0JR-3e-p6P" firstAttribute="leading" secondItem="Ck7-qc-utB" secondAttribute="leading" constant="45" id="8dL-Ex-lxN"/>
                                             <constraint firstAttribute="trailing" secondItem="83e-Ll-vUh" secondAttribute="trailing" constant="45" id="HRJ-nT-cYN"/>
@@ -130,5 +145,6 @@
         <image name="btn_like_pressed" width="32" height="32"/>
         <image name="btn_skip_normal" width="32" height="32"/>
         <image name="btn_skip_pressed" width="32" height="32"/>
+        <image name="btn_undo" width="21" height="21"/>
     </resources>
 </document>

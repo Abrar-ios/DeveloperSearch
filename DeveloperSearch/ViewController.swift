@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.developerList = DeveloperModel.getInstance().getDeveloperList()
+        self.developerList = DeveloperModel.getInstance().getDeveloperList()
         
         kolodaView.dataSource = self
         kolodaView.delegate = self
@@ -44,6 +44,10 @@ class ViewController: UIViewController {
         kolodaView?.swipe(.right)
     }
     
+    @IBAction func undoButtonTapped() {
+        kolodaView?.revertAction()
+    }
+    
 
 
 }
@@ -53,13 +57,10 @@ class ViewController: UIViewController {
 extension ViewController: KolodaViewDelegate {
     
     func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
-        let position = kolodaView.currentCardIndex
-        for i in 1...4 {
-            dataSource.append(UIImage(named: "Card_like_\(i)")!)
-        }
-        kolodaView.insertCardAtIndexRange(position..<position + 4, animated: true)
+        
+        kolodaView.resetCurrentCardIndex()
+        
     }
-    
     
 }
 
@@ -68,7 +69,7 @@ extension ViewController: KolodaViewDelegate {
 extension ViewController: KolodaViewDataSource {
     
     func kolodaNumberOfCards(_ koloda: KolodaView) -> Int {
-        return dataSource.count
+        return self.developerList.count
     }
     
     func kolodaSpeedThatCardShouldDrag(_ koloda: KolodaView) -> DragSpeed {
@@ -76,7 +77,16 @@ extension ViewController: KolodaViewDataSource {
     }
     
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
-        return UIImageView(image: dataSource[Int(index)])
+       let developerView : DeveloperView = DeveloperView.createNew(withAutoresizingMaskEnabled: false)
+        
+        if index < self.developerList.count {
+             developerView.updateView(withDeveloperDetail: self.developerList[index])
+        }else {
+            developerView.noDeveloper()
+        }
+       
+        return developerView
+       
     }
     
     func koloda(_ koloda: KolodaView, viewForCardOverlayAt index: Int) -> OverlayView? {

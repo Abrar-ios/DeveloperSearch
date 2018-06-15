@@ -15,6 +15,8 @@
 		A524001320D43F6300B2391A /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524001220D43F6300B2391A /* Util.swift */; };
 		A524001720D44D9900B2391A /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A524001620D44D9900B2391A /* OverlayView.xib */; };
 		A524001920D44DD400B2391A /* ExampleOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524001820D44DD400B2391A /* ExampleOverlayView.swift */; };
+		A524001B20D4535900B2391A /* DeveloperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524001A20D4535900B2391A /* DeveloperView.swift */; };
+		A524001D20D4536D00B2391A /* DeveloperView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A524001C20D4536D00B2391A /* DeveloperView.xib */; };
 		A524FFF320D431F700B2391A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524FFF220D431F700B2391A /* AppDelegate.swift */; };
 		A524FFF520D431F700B2391A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524FFF420D431F700B2391A /* ViewController.swift */; };
 		A524FFF820D431F700B2391A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A524FFF620D431F700B2391A /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 		A524001220D43F6300B2391A /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		A524001620D44D9900B2391A /* OverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
 		A524001820D44DD400B2391A /* ExampleOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleOverlayView.swift; sourceTree = "<group>"; };
+		A524001A20D4535900B2391A /* DeveloperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperView.swift; sourceTree = "<group>"; };
+		A524001C20D4536D00B2391A /* DeveloperView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeveloperView.xib; sourceTree = "<group>"; };
 		A524FFEF20D431F700B2391A /* DeveloperSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeveloperSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A524FFF220D431F700B2391A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A524FFF420D431F700B2391A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 			children = (
 				A524001820D44DD400B2391A /* ExampleOverlayView.swift */,
 				A524001620D44D9900B2391A /* OverlayView.xib */,
+				A524001A20D4535900B2391A /* DeveloperView.swift */,
+				A524001C20D4536D00B2391A /* DeveloperView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -214,6 +220,7 @@
 				A524FFFD20D431F700B2391A /* LaunchScreen.storyboard in Resources */,
 				A524FFFA20D431F700B2391A /* Assets.xcassets in Resources */,
 				A524001720D44D9900B2391A /* OverlayView.xib in Resources */,
+				A524001D20D4536D00B2391A /* DeveloperView.xib in Resources */,
 				A524FFF820D431F700B2391A /* Main.storyboard in Resources */,
 				A524000920D43DA800B2391A /* dev.json in Resources */,
 			);
@@ -289,6 +296,7 @@
 				A524FFF520D431F700B2391A /* ViewController.swift in Sources */,
 				A524001020D43F3500B2391A /* DeveloperModel.swift in Sources */,
 				A524FFF320D431F700B2391A /* AppDelegate.swift in Sources */,
+				A524001B20D4535900B2391A /* DeveloperView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
